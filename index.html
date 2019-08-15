@@ -4,14 +4,15 @@
       <title>Stick Figure Adventure</title>
       <script type="text/JavaScript">      
         let curScene = 0;
+        let decision = 0;
         
         function chooseOne() {
-          let decision = getElementById("1");
+          decision = 1;
           alert("Decision is " + decision);
         }
         
         function chooseTwo() {
-          let decision = 2;
+          decision = 2;
           alert("Decision is " + decision);
         }
         
@@ -25,7 +26,7 @@
     <body>
       <img id="sceneimg" src="scene0.png" />
       <br/>
-      <input type="button" value="1" id="1" onclick="chooseOne(1); nextScene();"/>
-      <input type="button" value="2" id="2" onclick="chooseTwo(2); nextScene();"/>
+      <input type="button" value="1" id="1" onclick="chooseOne(); nextScene();"/>
+      <input type="button" value="2" id="2" onclick="chooseTwo(); nextScene();"/>
     </body>    
   </html>
