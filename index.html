@@ -17,9 +17,10 @@
         }
         
         function nextScene() {
-          if (decision) {
+          if (curScene == 0) {
             curScene = 1; 
-            alert("You have arrived at a cute little house in the woods.");
+            alert("Your journey begins at a fork in the road.");
+            break;
           }
           if (curScene == 1) {
             if (decision == 1) {
@@ -29,6 +30,7 @@
               curScene = 3;
               alert("You are standing on the bridge overlooking a peaceful stream.");
             }
+            break;
           }
           if (curScene == 2) {
             if (decision == 1) {
@@ -38,6 +40,7 @@
               curScene = 5;
               alert("Message for scene 5.");
             }
+            break;
           } 
           if (curScene == 3) {
             if (decision == 1) {
@@ -47,6 +50,7 @@
               curScene = 7;
               alert("Message for scene 7.");
             }
+            break;
           }
           if (curScene == 4) {
             if (decision == 1) {
@@ -56,6 +60,7 @@
               curScene = 5;
               alert("Message for scene 5.");
             }
+            break;
           }
           if (curScene == 7) {
             if (decision == 1) {
@@ -65,6 +70,7 @@
               curScene = 9;
               alert("Message for scene 9.");
             }
+            break;
           }
           document.getElementById("sceneimg").src = "scene" + curScene + ".png";
         }
