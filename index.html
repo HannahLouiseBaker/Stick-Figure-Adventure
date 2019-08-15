@@ -2,10 +2,17 @@
   <html>
     <head>
       <title>Stick Figure Adventure</title>
+      <script type="text/JavaScript">
+        let decision = 0;
+        function nextScene() {
+          alert("Decision is " + decision;
+        }
+      </script>  
     </head>
+    
     <body>
-      <img src="scene0.png" />
-      <input type="button" value="1" id="1"/>
-      <input type="button" value="2" id="2"/>
+      <img id="sceneimg" src="scene0.png" />
+      <input type="button" value="1" id="1" onclick="decision = 1; nextScene();"/>
+      <input type="button" value="2" id="2" onclick="decision = 2; nextScene();"/>
     </body>    
   </html>
