@@ -2,9 +2,11 @@
   <html>
     <head>
       <title>Stick Figure Adventure</title>
-      <script type="text/JavaScript">        
+      <script type="text/JavaScript">      
+        let curScene = 0;
+        
         function chooseOne() {
-          let decision = 1;
+          let decision = getElementById("1");
           alert("Decision is " + decision);
         }
         
@@ -23,7 +25,7 @@
     <body>
       <img id="sceneimg" src="scene0.png" />
       <br/>
-      <input type="button" value="1" id="1" onclick="chooseOne(); nextScene();"/>
-      <input type="button" value="2" id="2" onclick="chooseTwo(); nextScene();"/>
+      <input type="button" value="1" id="1" onclick="chooseOne(1); nextScene();"/>
+      <input type="button" value="2" id="2" onclick="chooseTwo(2); nextScene();"/>
     </body>    
   </html>
