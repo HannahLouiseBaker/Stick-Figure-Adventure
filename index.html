@@ -17,15 +17,26 @@
         }
         
         function nextScene() {
+          if (decision == 1) {
+            curScene = 2;
+            alert("You have arrived at a cute little house in the woods.");
+          } else {
+            curScene = 3;
+            alert("You are standing on the bridge overlooking a peaceful stream.");
+          }
+          document.getElementById("sceneimg").src = "scene" + curScene + ".png";
+        }
+        
+        /*function nextScene() {
           document.getElementById("sceneimg").src = "scene" + curScene + ".png";
           alert("Your journey begins at a fork in the road.");
-        }
+        }*/
         
       </script>  
     </head>
     
     <body>
-      <img id="sceneimg" src="scene0.png" />
+      <img id="sceneimg" src="scene1.png" />
       <br/>
       <input type="button" value="1" id="1" onclick="chooseOne(); nextScene();"/>
       <input type="button" value="2" id="2" onclick="chooseTwo(); nextScene();"/>
