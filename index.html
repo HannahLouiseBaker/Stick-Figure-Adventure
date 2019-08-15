@@ -3,7 +3,7 @@
     <head>
       <title>Stick Figure Adventure</title>
       <script type="text/JavaScript">      
-        let curScene = 0;
+        let curScene = 1;
         let decision = 0;
         
         function chooseOne() {
@@ -17,11 +17,11 @@
         }
         
         function nextScene() {
-          if (curScene == 0) {
+          /*if (curScene == 0) {
             curScene = 1; 
             alert("Your journey begins at a fork in the road.");
             break;
-          }
+          }*/
           if (curScene == 1) {
             if (decision == 1) {
               curScene = 2;
@@ -84,7 +84,7 @@
     </head>
     
     <body>
-      <img id="sceneimg" src="scene0.png" />
+      <img id="sceneimg" src="scene1.png" />
       <br/>
       <input type="button" value="1" id="1" onclick="chooseOne(); nextScene();"/>
       <input type="button" value="2" id="2" onclick="chooseTwo(); nextScene();"/>
