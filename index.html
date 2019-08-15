@@ -3,7 +3,7 @@
     <head>
       <title>Stick Figure Adventure</title>
       <script type="text/JavaScript">      
-        let curScene = 0;
+        let curScene = 1;
         let decision = 0;
         
         function chooseOne() {
@@ -16,9 +16,10 @@
           alert("Decision is " + decision);
         }
         
-        /*function nextScene() {
-          alert("Decision is " + decision);
-        }*/
+        function nextScene() {
+          document.getElementById("sceneimg").src = "scene" + curScene + ".png";
+          alert("Your journey begins at a fork in the road.");
+        }
         
       </script>  
     </head>
