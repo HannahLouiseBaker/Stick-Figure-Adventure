@@ -4,17 +4,6 @@
       <title>Stick Figure Adventure</title>
       <script type="text/JavaScript">      
         let curScene = 0;
-        //let decision = 0;
-        
-        /*function chooseOne() {
-          decision = 1;
-          //alert("Decision is " + decision);
-        }
-        
-        function chooseTwo() {
-          decision = 2;
-          //alert("Decision is " + decision);
-        }*/
         
         function nextScene(decision) {
           let message = "";
@@ -59,10 +48,14 @@
             }
           }
           else if (curScene == 5) {
-            curScene = 0;          
+            if (decision == 1 || decision == 2) {
+              curScene = 0;
+            }                      
           }
           else if (curScene == 6) {
-            curScene = 0;
+            if (decision == 1 || decision == 2) {
+              curScene = 0;
+            }
           }
           else if (curScene == 7) {
             if (decision == 1) {
@@ -78,11 +71,6 @@
             alert(message);
           }
         }
-        
-        /*function nextScene() {
-          document.getElementById("sceneimg").src = "scene" + curScene + ".png";
-          alert("Your journey begins at a fork in the road.");
-        }*/
         
       </script>  
     </head>
