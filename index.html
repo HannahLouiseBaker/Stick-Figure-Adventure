@@ -4,9 +4,9 @@
       <title>Stick Figure Adventure</title>
       <script type="text/JavaScript">      
         let curScene = 0;
-        let decision = 0;
+        //let decision = 0;
         
-        function chooseOne() {
+        /*function chooseOne() {
           decision = 1;
           //alert("Decision is " + decision);
         }
@@ -14,9 +14,9 @@
         function chooseTwo() {
           decision = 2;
           //alert("Decision is " + decision);
-        }
+        }*/
         
-        function nextScene() {
+        function nextScene(decision) {
           if (curScene == 0) {
             curScene = 1; 
             alert("Your journey begins at a fork in the road.");
@@ -80,7 +80,7 @@
     <body>
       <img id="sceneimg" src="scene0.png" />
       <br/>
-      <input type="button" value="1" id="1" onclick="chooseOne(); nextScene();"/>
-      <input type="button" value="2" id="2" onclick="chooseTwo(); nextScene();"/>
+      <input type="button" value="1" id="1" onclick="nextScene(1);"/>
+      <input type="button" value="2" id="2" onclick="nextScene(2);"/>
     </body>    
   </html>
