@@ -47,16 +47,6 @@
               message = "Sorry, you became part of the witch's stew.";
             }
           }
-          else if (curScene == 5) {
-            if (decision == 1 || decision == 2) {
-              curScene = 0;
-            }                      
-          }
-          else if (curScene == 6) {
-            if (decision == 1 || decision == 2) {
-              curScene = 0;
-            }
-          }
           else if (curScene == 7) {
             if (decision == 1) {
               curScene = 6;
@@ -65,6 +55,12 @@
               curScene = 9;
               message = "To be continued.";
             }
+          }
+          else if (curScene == 8) {
+            curScene = 0;
+          }
+          else if (curScene == 9) {
+            curScene = 0;
           }
           document.getElementById("sceneimg").src = "scene" + curScene + ".png";
           if (message != "") {
